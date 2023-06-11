@@ -1,0 +1,40 @@
+<div style="display: flex; height: 750px; justify-content: center; align-items: center;">
+  <div class="main-container">
+   
+    <div class = "maingroup">
+   
+      <div class ="group1">
+      <input #c3 type="number" class ="input1" id = "input1">
+      <div class="selection-cont">
+        <select #c1 name="" id="country1" class = "selectLeft">
+          <option value="USD">US Dollar</option>
+          <option value="EUR">Euro</option>
+          <option value="UAH">Ukrainian Hryvnia</option>
+        </select>
+      </div>
+    </div>
+
+        <button (click) = "rotateValue(c3.value, c4.value, c1.value, c2.value);"> to </button>
+        
+      
+      <div class ="group2">
+        <input #c4 type="number" class = "input2" id = "input2" disabled>
+        <select #c2 name="" id="country2" class = "selectRight">
+          <option value="USD">US Dollar</option>
+          <option value="EUR">Euro</option>
+          <option value="UAH">Ukrainian Hryvnia</option>
+        </select>
+      </div>
+    
+    </div>
+
+    <button (click)="changecount2(c2.value); changecount1(c1.value); changecurr1(c3.value);changecurr2(c4.value); convert()">Submit</button>
+    
+  
+  <div class="result-container">
+    <p>1 {{cont1}}</p>
+   <p> = </p>
+    <p>{{result}} {{cont2}}</p>
+  </div>
+</div>
+</div>
