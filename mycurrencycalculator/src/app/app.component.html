@@ -4,7 +4,7 @@
     <div class = "maingroup">
    
       <div class ="group1">
-      <input #c3 type="number" class ="input1" id = "input1">
+      <input #c3 type="number" class ="input1" id = "input1" value = "0">
       <div class="selection-cont">
         <select #c1 name="" id="country1" class = "selectLeft">
           <option value="USD">US Dollar</option>
@@ -18,7 +18,7 @@
         
       
       <div class ="group2">
-        <input #c4 type="number" class = "input2" id = "input2" disabled>
+        <input #c4 type="number" class = "input2" id = "input2" disabled value = "0">
         <select #c2 name="" id="country2" class = "selectRight">
           <option value="USD">US Dollar</option>
           <option value="EUR">Euro</option>
@@ -28,7 +28,7 @@
     
     </div>
 
-    <button (click)="changecount2(c2.value); changecount1(c1.value); changecurr1(c3.value);changecurr2(c4.value); convert()">Submit</button>
+    <button (click)="changecount(c1.value,c2.value,c3.value);convert();">Submit</button>
     
   
   <div class="result-container">

@@ -103,3 +103,7 @@ input{
     margin: 10px;
     width: 100px;
 }
+
+body{
+    background-image: url("/mycurrencycalculator/src/assets/backMain.jpeg");
+}
